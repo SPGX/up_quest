@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Button, StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
 const HomeScreen = (props) => {
@@ -39,65 +39,146 @@ const HomeScreen = (props) => {
                 </View>
             </View>
             <View style={{ flex:15, backgroundColor:'#CCBAFF' }}>
-                <View style={{ flex:1, backgroundColor:'gray' }}>
-
+                <View style={{flex:1, alignItems: 'center', marginTop: 20}}>
+                    <View style={{ backgroundColor:'gray', borderRadius: 15, width: '90%', height: '90px' , alignItems: 'center', margin: 10 }}>
+                        test
+                    </View>
                 </View>
-                <View style={{ flex:4, backgroundColor:'pink' }}>
+                <View style={{ flex:2, backgroundColor:'#CCBAFF' }}>
+                    <View style={{ alignItems: 'center', margin: 5, marginTop: 55 }}>
+                        <Image
+                            style={{ width:'300px', height:'250px', borderWidth:'10' }}
+                            source={require('../assets/icon.png')}
+                        />
+                    </View>
 
                 </View>
                 <View style={{ flex:3, backgroundColor:'orange' }}>
                     <View style={{ flex:1, flexDirection:'column', alignItems:'center', backgroundColor:'white' }}>
                         <TouchableOpacity onPress={() => navigation.navigate('Quest')} >
-                            <Button title='งานจิตอาสา'/>
+                            <View style={{ width:'150px', alignContent:'center'}}>
+                                <Button color="#AA67FF" title='งานจิตอาสา'/>
+                            </View>
                         </TouchableOpacity>
                     </View>
+
                     <View style={{ flex:5, backgroundColor:'white' }}>
-                        <View style={{ flex:1, backgroundColor:'red' }}>
+                        <View style={{ flex:1, backgroundColor:'white' }}>
                             <View style={{ flex:1, flexDirection:'row' }}>
-                                <View style={{ flex:1, backgroundColor:'pink' }}>
+                                <View style={{ flex:1, backgroundColor:'white'}}>
                                     <TouchableOpacity onPress={() => navigation.navigate('EducationReport')}>
-                                        <Text>
-                                            รายงานผลการเรียน
-                                        </Text>
+                                        <View style={{ alignItems: 'center', margin: 5, marginTop: 15  }}>
+                                            <Image
+                                                style={{ width:'50px', height:'50px', borderWidth:'10' }}
+                                                source={{uri:'https://www.flaticon.com/svg/vstatic/svg/4151/4151397.svg?token=exp=1612363481~hmac=e65f2bd77bca5a799de0fdf1add55bd3'}}
+                                            />
+                                        </View>
+
+                                        <View style={{alignItems: 'center'}}>
+                                            <Text>
+                                                รายงาน
+                                            </Text>
+                                            <Text>
+                                                ผลการเรียน
+                                            </Text>
+                                        </View>
+                                            
                                     </TouchableOpacity>
                                 </View>
-                                <View style={{ flex:1, backgroundColor:'red' }}>
-                                    <TouchableOpacity onPress={() => navigation.navigate('QuestEnroll')}>
-                                        <Text>
-                                            งานจิตอาสาที่ลงทะเบียน
-                                        </Text>
+                                <View style={{ flex:1, backgroundColor:'white' }}>
+                                    <TouchableOpacity onPress={() => navigation.navigate('EducationReport')}>
+                                        <View style={{ alignItems: 'center', margin: 5, marginTop: 15  }}>
+                                            <Image
+                                                style={{ width:'50px', height:'50px', borderWidth:'10' }}
+                                                source={{uri:'https://www.flaticon.com/svg/vstatic/svg/3281/3281289.svg?token=exp=1612363611~hmac=57de7ef018d309110a385336236d485d'}}
+                                            />
+                                        </View>
+
+                                        <View style={{alignItems: 'center'}}>
+                                            <Text>
+                                                งานจิตอาสา
+                                            </Text>
+                                            <Text>
+                                                ที่ลงทะเบียน
+                                            </Text>
+                                        </View>           
                                     </TouchableOpacity>
                                 </View>
-                                <View style={{ flex:1, backgroundColor:'pink' }}>
-                                    <TouchableOpacity onPress={() => navigation.navigate('Fund')}>
-                                        <Text>
-                                            ประวัติการได้รับทุน
-                                        </Text>
+                                <View style={{ flex:1, backgroundColor:'white' }}>
+                                    <TouchableOpacity onPress={() => navigation.navigate('EducationReport')}>
+                                        <View style={{ alignItems: 'center', margin: 5, marginTop: 15  }}>
+                                            <Image
+                                                style={{ width:'50px', height:'50px', borderWidth:'10' }}
+                                                source={{uri:'https://www.flaticon.com/svg/vstatic/svg/2145/2145230.svg?token=exp=1612363711~hmac=360920148d12c034646e8091b754791a'}}
+                                            />
+                                        </View>
+
+                                        <View style={{alignItems: 'center'}}>
+                                            <Text>
+                                                ประวัติ
+                                            </Text>
+                                            <Text>
+                                                การได้รับทุน
+                                            </Text>
+                                        </View>           
                                     </TouchableOpacity>
                                 </View>
                             </View>
                         </View>
                         <View style={{ flex:1, backgroundColor:'blue' }}>
                             <View style={{ flex:1, flexDirection:'row' }}>
-                                <View style={{ flex:1, backgroundColor:'red' }}>
-                                    <TouchableOpacity onPress={() => navigation.navigate('Income')}>
-                                        <Text>
-                                            รายรับรายจ่าบ
-                                        </Text>
+                                <View style={{ flex:1, backgroundColor:'white' }}>
+                                    <TouchableOpacity onPress={() => navigation.navigate('EducationReport')}>
+                                        <View style={{ alignItems: 'center', margin: 5, marginTop: 15  }}>
+                                            <Image
+                                                style={{ width:'50px', height:'50px', borderWidth:'10' }}
+                                                source={{uri:'https://www.flaticon.com/svg/vstatic/svg/2643/2643268.svg?token=exp=1612363799~hmac=a37299298da5246d3948584b3e612e49'}}
+                                            />
+                                        </View>
+
+                                        <View style={{alignItems: 'center'}}>
+                                            <Text>
+                                                รายรับ
+                                            </Text>
+                                            <Text>
+                                                รายจ่าย
+                                            </Text>
+                                        </View>           
                                     </TouchableOpacity>
                                 </View>
-                                <View style={{ flex:1, backgroundColor:'pink' }}>
-                                    <TouchableOpacity onPress={() => navigation.navigate('FundRule')}>
-                                        <Text>
-                                            เงื่อนไขของทุน
-                                        </Text>
+                                <View style={{ flex:1, backgroundColor:'white' }}>
+                                     <TouchableOpacity onPress={() => navigation.navigate('EducationReport')}>
+                                        <View style={{ alignItems: 'center', margin: 5, marginTop: 15  }}>
+                                            <Image
+                                                style={{ width:'50px', height:'50px', borderWidth:'10' }}
+                                                source={{uri:'https://www.flaticon.com/svg/vstatic/svg/4150/4150831.svg?token=exp=1612363912~hmac=5cee3e1e6edb7d561528ac2df9fdda53'}}
+                                            />
+                                        </View>
+
+                                        <View style={{alignItems: 'center'}}>
+                                            <Text>
+                                                เงื่อนไขทุน
+                                            </Text>
+                                        </View>           
                                     </TouchableOpacity>
                                 </View>
-                                <View style={{ flex:1, backgroundColor:'red' }}>
-                                    <TouchableOpacity onPress={() => navigation.navigate('Duty')}>
-                                        <Text>
-                                            บทบาทหน้าที่ของนิสิตทุน
-                                        </Text>
+                                <View style={{ flex:1, backgroundColor:'white' }}>
+                                     <TouchableOpacity onPress={() => navigation.navigate('EducationReport')}>
+                                        <View style={{ alignItems: 'center', margin: 5, marginTop: 15 }}>
+                                            <Image
+                                                style={{ width:'50px', height:'50px', borderWidth:'10' }}
+                                                source={{uri:'https://www.flaticon.com/svg/vstatic/svg/1412/1412282.svg?token=exp=1612363985~hmac=e38fc25f34e6d31dd3021944438d2669'}}
+                                            />
+                                        </View>
+
+                                        <View style={{alignItems: 'center'}}>
+                                            <Text>
+                                                บทบาทหน้าที่
+                                            </Text>
+                                            <Text>
+                                                ของนิสิตทุน
+                                            </Text>
+                                        </View>           
                                     </TouchableOpacity>
                                 </View>
                             </View>
